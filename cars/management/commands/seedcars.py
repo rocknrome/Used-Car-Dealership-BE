@@ -39,7 +39,8 @@ class Command(BaseCommand):
                 year=car_data['year'],
                 mileage=car_data['mileage'],
                 price=car_data['price'],
-                description=car_data['description']
+                description=car_data['description'],
+                photo_url=car_data['photo_url']  # Assign the photo_url here
             )
             if 'photo_url' in car_data:
                 photo_url = car_data['photo_url']
