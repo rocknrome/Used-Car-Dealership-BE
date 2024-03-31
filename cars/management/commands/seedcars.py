@@ -15,7 +15,7 @@ class Command(BaseCommand):
                 'mileage': 15000,
                 'price': 20000,
                 'description': 'A reliable car',
-                'photo': 'https://ibb.co/ZJ447xL'
+                'photo': 'https://live.staticflickr.com/65535/53623319538_82e45d8d94_m.jpg'
             },
             {
                 'make': 'Honda',
@@ -25,7 +25,7 @@ class Command(BaseCommand):
                 'mileage': 10000,
                 'price': 18000,
                 'description': 'Compact and fuel-efficient',
-                'photo': 'https://ibb.co/J281CbZ'
+                'photo': 'https://live.staticflickr.com/65535/53623560995_0386e3e449_m.jpg'
             },
             # Add more cars here (!!!)
         ]
