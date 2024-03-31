@@ -1,4 +1,3 @@
-# cars/views.py
 from rest_framework import viewsets, permissions
 from .models import Car
 from .serializers import CarSerializer
