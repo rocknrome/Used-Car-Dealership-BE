@@ -110,5 +110,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'https://car-dealership-fe.netlify.app/'
+    'https://car-dealership-fe.netlify.app/',
+    'https://used-car-dealership-fe.vercel.app/'
 ]
