@@ -113,6 +113,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://car-dealership-fe.netlify.app/',
     'https://used-car-dealership-fe.vercel.app/',
     'https://magenta-cheesecake-a549ae.netlify.app/',
-    'https://golden-daifuku-b91655.netlify.app',           #React final deployment
+    'https://golden-daifuku-b91655.netlify.app/',           #React final deployment
     'https://final-project-for-ga-seal-bootcamp.vercel.app/' #Flutter initial deployment
 ]
