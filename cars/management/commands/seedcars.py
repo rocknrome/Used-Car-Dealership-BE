@@ -9,8 +9,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         cars = [
   {
-    "id": 36,
-    "photo": null,
+    "id": 1,
     "make": "Toyota",
     "model": "Corolla",
     "color": "Blue",
@@ -21,8 +20,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53632512847_071816a4c2.jpg"
   },
   {
-    "id": 27,
-    "photo": null,
+    "id": 2,
     "make": "Honda",
     "model": "Civic Type R",
     "color": "Yellow",
@@ -33,8 +31,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633669323_d06c8c187e.jpg"
   },
   {
-    "id": 25,
-    "photo": null,
+    "id": 3,
     "make": "Mercedes",
     "model": "AMG GT",
     "color": "Green",
@@ -45,8 +42,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633769204_bbd9c58b7d.jpg"
   },
   {
-    "id": 26,
-    "photo": null,
+    "id": 4,
     "make": "BMW",
     "model": "M8",
     "color": "Ametrin Metallic",
@@ -57,8 +53,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633445186_92a9bbb91d.jpg"
   },
   {
-    "id": 43,
-    "photo": null,
+    "id": 5,
     "make": "Porsche",
     "model": "911",
     "color": "White",
@@ -69,8 +64,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633706438_62befee86d.jpg"
   },
   {
-    "id": 33,
-    "photo": null,
+    "id": 6,
     "make": "Ford",
     "model": "Mustang Mach 1",
     "color": "Racing Red",
@@ -81,8 +75,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633715908_e3f35020d2.jpg"
   },
   {
-    "id": 38,
-    "photo": null,
+    "id": 7,
     "make": "Bentley",
     "model": "Continental GT",
     "color": "Moroccan Blue",
@@ -93,8 +86,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633745248_068737a91a.jpg"
   },
   {
-    "id": 44,
-    "photo": null,
+    "id": 8,
     "make": "Ford",
     "model": "Mustang",
     "color": "Dupont Pepper Grey",
@@ -105,8 +97,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53633823360_f32b8e6497.jpg"
   },
   {
-    "id": 34,
-    "photo": null,
+    "id": 9,
     "make": "Chevy",
     "model": "Corvette",
     "color": "Sky Blue",
@@ -117,8 +108,7 @@ class Command(BaseCommand):
     "photo_url": "https://live.staticflickr.com/65535/53632524297_d8aa06c44f.jpg"
   },
   {
-    "id": 28,
-    "photo": null,
+    "id": 10,
     "make": "McLaren",
     "model": "Artura",
     "color": "Indy Orange",
@@ -139,11 +129,10 @@ class Command(BaseCommand):
                 mileage=car_data['mileage'],
                 price=car_data['price'],
                 description=car_data['description'],
-                photo_url=car_data['photo_url']  # Assign the photo_url here
+                photo_url=car_data['photo_url']
             )
             if 'photo_url' in car_data:
                 photo_url = car_data['photo_url']
-                # Download the image and save it to the photo field
                 response = urllib.request.urlopen(photo_url)
                 car.photo.save(f'{car.make}_{car.model}.jpg', File(response), save=True)
 
