@@ -115,6 +115,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://magenta-cheesecake-a549ae.netlify.app',
     'https://golden-daifuku-b91655.netlify.app',
     'http://localhost:50260',
-    'https://car-dealership-fe.netlify.app'
+    'https://final-project-flutter-car-club.vercel.app/'
 ]
 
