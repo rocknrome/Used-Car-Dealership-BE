@@ -114,6 +114,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://used-car-dealership-fe.vercel.app',
     'https://magenta-cheesecake-a549ae.netlify.app',
     'https://golden-daifuku-b91655.netlify.app',
-    'http://localhost:61428/'
+    'http://localhost:64350'
 ]
 
