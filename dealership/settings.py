@@ -116,6 +116,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://golden-daifuku-b91655.netlify.app',
     'http://localhost:50260',
     'https://final-project-flutter-car-club.vercel.app/',
-    'https://rocknrome2024carclub.web.app/'
+    'https://rocknrome0409.web.app'
 ]
 
