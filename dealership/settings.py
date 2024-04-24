@@ -117,7 +117,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:50260',
     'https://final-project-flutter-car-club.vercel.app/',
     'https://rocknrome0409.web.app',
-    'http://localhost:51618/',
+    'http://localhost:56476/',
      '*' # allow all origins
 ]
 
